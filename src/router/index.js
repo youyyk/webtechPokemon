@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import  NumberList from '@/views/NumberList'
 import  PokemonList from '@/views/PokemonList'
+import Pokedex from '@/views/Pokedex'
 Vue.use(VueRouter)
 
 const routes = [
@@ -28,7 +29,12 @@ const routes = [
     path: '/pokemons',
     name: "PokemonList",
     component: PokemonList
-  }
+  },
+  {
+    path: '/pokedex',
+    name: "Pokedex",
+    component: Pokedex
+  },
 ]
 
 const router = new VueRouter({
