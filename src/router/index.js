@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import  NumberList from '@/views/NumberList'
 import  PokemonList from '@/views/PokemonList'
-import Pokedex from '@/views/Pokedex'
+import Pokedex from '@/views/pokedex/Index'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,10 +15,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   },
   {
     path: '/numbers',
@@ -34,6 +31,21 @@ const routes = [
     path: '/pokedex',
     name: "Pokedex",
     component: Pokedex
+  },
+  {
+    path: '/pokedex/create',
+    name: 'PokedexCreate',
+    component: () => import('../views/pokedex/Create')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/auth/Login')
+  },
+  {
+    path: '/logout',
+    name: 'Logout',
+    component: () => import('../views/auth/Logout')
   },
 ]
 

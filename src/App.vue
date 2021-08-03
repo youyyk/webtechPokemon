@@ -5,7 +5,9 @@
       <router-link to="/about">About</router-link> | 
       <router-link to="/numbers">Number List</router-link> |
       <router-link to="/pokemons">Pokemons</router-link> |
-      <router-link to="/pokedex">Pokedex</router-link>
+      <router-link to="/pokedex">Pokedex</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/logout">Logout</router-link> |
     </div>
     <router-view/>
   </div>

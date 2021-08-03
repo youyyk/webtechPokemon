@@ -1,18 +1,17 @@
 <template>
   <div>
-    Pokemon List
-    <pokedex-create-form></pokedex-create-form>     
+    <h1>Pokemon List</h1>
+    
+    <router-link to="/pokedex/create">Add New Pokemon</router-link>
     <pokedex-table></pokedex-table>
   </div>
 </template>
 
 <script>
 import PokedexTable from '@/components/PokedexTable'
-import PokedexCreateForm from '@/components/PokedexCreateForm.vue'
 export default {
     components: {
         PokedexTable,
-        PokedexCreateForm 
     }
 }
 </script>

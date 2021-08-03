@@ -7,6 +7,9 @@ import VueAxios from 'vue-axios'
 import axios from 'axios'
 Vue.use(VueAxios,axios)
 
+import VueSwal from 'vue-swal'
+Vue.use(VueSwal)
+
 Vue.config.productionTip = false
 
 new Vue({
